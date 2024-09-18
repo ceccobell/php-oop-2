@@ -15,7 +15,23 @@
         }
     }
 
-    $gioco_cani = new Prodotto("osso", "30", "https://www.amicipappagalli.it/wp-content/uploads/2015/03/DSC_0236.-osso-bianchi-nodo-naturale-piatto-gt054.jpg", "cani", "morbidi");
+    /* $gioco_cani = new Prodotto("osso", "30", "https://www.amicipappagalli.it/wp-content/uploads/2015/03/DSC_0236.-osso-bianchi-nodo-naturale-piatto-gt054.jpg", "cani", "morbidi");
 
-    var_dump($gioco_cani);
+    var_dump($gioco_cani); */
+
+    class Categoria {
+        public $nomeCategoria;
+
+        public function __construct($_nomeCategoria) {
+            $this->nomeCategoria = $_nomeCategoria;
+        }
+    }
+
+    class TipoArticolo {
+        public $nomeTipoArticolo;
+
+        public function __construct($_nomeTipoArticolo) {
+            $this->nomeTipoArticolo = $_nomeTipoArticolo;
+        }
+    }
 ?>
