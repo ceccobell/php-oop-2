@@ -45,7 +45,29 @@
     $giocoGatti = new Prodotto("Topo di peluche", 7, "https://www.toctocshop.com/media/catalog/product/cache/1b40543c03522e70d25a2e1d291e4ce9/f/f/ff7308b362ebe8ed85371b323662e9e85afe587802adc2eef8adb255759844df.jpeg", $categoriaGatti, $gioco);
   
     $ciboCani = new Prodotto("Scatoletta di manzo", 3, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxQHCAwqNgP2lfFDqziKBqTSiNl9VSCCTndQ&s", $categoriaCani, $cibo);
-
-    var_dump($giocoCani, $ciboCani, $ciboGatti, $cucciaCani, $giocoGatti);
-
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>php-oop-2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card mt-5" style="width: 18rem;">
+                    <img src="<?php echo $giocoCani->immagine ?>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $giocoCani->titolo ?></h5>
+                        <span class="card-text"><?php echo $giocoCani->prezzo ?>&euro;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
