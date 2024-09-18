@@ -36,4 +36,7 @@
     $cucce = new TipoArticolo("Cucce");
     $cibo = new TipoArticolo("Cibo");
     
+    $giocoCani = new Prodotto("Pallina da tennis", 5, "https://ss-pics.s3.eu-west-1.amazonaws.com/files/1036351/large-61X1W2PAV5L._SL1000_.jpg?1582104879", $categoriaCani, $gioco);
+
+    var_dump($giocoCani);
 ?>
