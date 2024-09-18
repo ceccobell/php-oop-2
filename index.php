@@ -56,15 +56,17 @@
 <body>
     <div class="container">
         <div class="row">
+            <?php foreach($prodotti as $prodotto){ ?>
             <div class="col">
-                <div class="card mt-5" style="width: 18rem;">
-                    <img src="<?php echo $giocoCani->immagine ?>" class="card-img-top" alt="...">
+                <div class="card mt-5">
+                    <img src="<?php echo $prodotto->immagine ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"><?php echo $giocoCani->titolo ?></h5>
-                        <span class="card-text"><?php echo $giocoCani->prezzo ?>&euro;</span>
+                        <h5 class="card-title"><?php echo $prodotto->titolo ?></h5>
+                        <span class="card-text"><?php echo $prodotto->prezzo ?>&euro;</span>
                     </div>
                 </div>
             </div>
+            <?php } ?> 
         </div>
     </div>
 </body>
