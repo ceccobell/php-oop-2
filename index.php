@@ -1,5 +1,11 @@
 <?php
-    require_once 'prodotti.php'
+    require_once 'prodotti.php';
+
+    try {
+        $prodotti;
+    } catch (Exception $e){
+        echo 'Errore: ' . $e->getMessage();
+    }
 ?>
 
 <!DOCTYPE html>
